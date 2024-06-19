@@ -1,3 +1,6 @@
+import React from 'react';
+
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -13,9 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: React.PropsWithChildren) {
   return (
     <html lang='en'>
       <body className={inter.className}>

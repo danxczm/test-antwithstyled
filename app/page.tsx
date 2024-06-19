@@ -1,3 +1,13 @@
+import { Button } from 'antd';
+
 export default function Home() {
-  return <main>Hello Universe!</main>;
+  return (
+    <main>
+      <div className='App'>
+        <Button type='primary'>
+          Button
+        </Button>
+      </div>
+    </main>
+  );
 }
