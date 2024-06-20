@@ -1,12 +1,10 @@
-import { Button } from 'antd';
+import Button from '@/components/Button';
 
 export default function Home() {
   return (
     <main>
-      <div className='App'>
-        <Button type='primary'>
-          Button
-        </Button>
+      <div>
+        <Button>Sign In</Button>
       </div>
     </main>
   );
