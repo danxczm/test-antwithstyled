@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 export default function Home() {
   return (
     <main>
-      <Button>Зареєструватись</Button>
+      <Button disabled>Зареєструватись</Button>
     </main>
   );
 }

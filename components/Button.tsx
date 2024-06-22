@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 const ButtonStyled = styled(AntButton)`
   padding: 40px;
   &:hover {
-    background: tomato !important;
+    background: ${props => (props.disabled ? 'none' : 'tomato !important')};
   }
 `;
 
