@@ -2,9 +2,10 @@ import React from 'react';
 
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
-const inter = Inter({
+const inter = Montserrat({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
 });
 
