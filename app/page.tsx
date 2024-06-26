@@ -14,8 +14,8 @@ export default function Home() {
       }}
     >
       <Button type='primary'>Зареєструватись</Button>
-      <Button icon={<FcGoogle size={22} />}>Увійти через Google</Button>
-      <Icon iconName='signout' />
+      <Button icon={<Icon icon='google' />}>Увійти через Google</Button>
+      <Icon icon='done' width={50} color='silver' />
     </main>
   );
 }

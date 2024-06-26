@@ -1,15 +1,22 @@
-type IconProps = {
-  props?: any;
-  iconName?: string;
-  className?: string;
-  style?: object;
+import styled from '@emotion/styled';
+
+type SvgIconProps = {
+  icon?: string;
+  width?: number;
+  height?: number;
+  color?: string;
 };
 
-const Icon = ({ props, iconName, className, style }: IconProps) => {
+const StyledSvg = styled.svg<SvgIconProps>`
+  cursor: pointer;
+  color: ${({ color }) => color};
+`;
+
+const Icon = ({ icon, width = 20, height, color, ...props }: SvgIconProps) => {
   return (
-    <svg {...props} className={className} style={style}>
-      <use href={`sprite.svg#${iconName}`} />
-    </svg>
+    <StyledSvg {...props} width={width} height={height ?? width} color={color}>
+      <use href={`sprite.svg#${icon}`} />
+    </StyledSvg>
   );
 };
 
