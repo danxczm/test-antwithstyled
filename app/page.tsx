@@ -15,7 +15,13 @@ export default function Home() {
     >
       <Button type='primary'>Зареєструватись</Button>
       <Button icon={<Icon icon='google' />}>Увійти через Google</Button>
-      <Icon icon='done' width={50} color='silver' />
+      <Icon icon='done' width={50} color='tomato' />
+      <Icon icon='search' width={50} color='green' />
+      <Icon icon='google' width={50} color='tomato' />
+      <Icon icon='signout' width={50} color='tomato' />
+      <Icon icon='data' width={50} color='tomato' />
+      <Icon icon='chart_line' width={50} color='tomato' />
+      <Icon icon='image' width={50} color='tomato' />
     </main>
   );
 }
