@@ -6,27 +6,27 @@ import Icon from '@/components/Icon';
 import { ConfigProvider, Space } from 'antd';
 import { Select } from 'antd';
 
-type ThemeKey = 'light' | 'dark' | 'glass';
+type ThemeName = 'light' | 'dark' | 'glass';
 
 export default function Home() {
-  const [theme, setTheme] = useState<ThemeKey>('light');
+  const [theme, setTheme] = useState<ThemeName>('light');
 
   const themeOptions = [
     {
-      value: 'Light',
+      value: 'light',
       label: 'Light',
     },
     {
-      value: 'Dark',
+      value: 'dark',
       label: 'Dark',
     },
     {
-      value: 'Glass',
+      value: 'glass',
       label: 'Glass',
     },
   ];
 
-  const themes: { [key in ThemeKey]: object } = {
+  const themes: { [key in ThemeName]: object } = {
     light: {},
     dark: {
       colorBgBase: '#5AB2FF',
@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   const handleChange = (value: string) => {
-    setTheme(value.toLowerCase() as ThemeKey);
+    setTheme(value as ThemeName);
   };
 
   return (
