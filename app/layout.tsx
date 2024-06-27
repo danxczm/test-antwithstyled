@@ -4,6 +4,8 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 
+import { ConfigProvider } from 'antd';
+
 const inter = Montserrat({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
