@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className} style={{ margin: 0, padding: 0 }}>
         <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
